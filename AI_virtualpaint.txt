@@ -1,0 +1,11 @@
+python -m venv venv
+
+.\venv\Scripts\activate
+
+source venv/bin/activate
+
+pip install opencv-python mediapipe numpy
+
+from handTracker import MediapipeHands, findDistances, findError
+
+python paint.py
